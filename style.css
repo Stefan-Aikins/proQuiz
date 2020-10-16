@@ -1,0 +1,37 @@
+/*place heading at the center*/
+.align-heading{
+    text-align : center;
+    margin-top: 30px;
+}
+
+
+#top-container{
+    border: 3px;
+    border-style: ridge;
+    padding: 5px;  
+}
+
+#timer{
+    color: #007bff;
+}
+
+#high-score{
+    display: inline;
+}
+
+#top-container a{
+    text-decoration-line: none;
+}
+
+#count {
+    float: right;
+}
+
+#start-photo {
+    width: 100%;
+    height: 540px;
+}
+
+.start-button{
+    width: 100%
+}
