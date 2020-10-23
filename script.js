@@ -1,32 +1,94 @@
-/* variables to store the questions
-2. questin description
-3. 4 ans for each question
-4. correct or wrong ans
+/* present questions and start timer when button is clicked
+
 */
+//Selecting all html elements 
 
-//click handler for start button
-// click start button everything disappears n question appears
-// show questions
-// show timer (start countdown)
-//view higher scores button
+let frontPhoto = document.querySelector('#start-photo');
+let scores = document.querySelector('#highscore');
+let countdown = document.querySelector('#timer');
+
+//create the button click action
+let startBtn = document.querySelector('#start-button');
+startBtn.addEventListener('click', startQuiz)
+
+//forming a set of 10 questions
+var jsQuestions = ["What is the element tag for javascript?",
+                   /* {
+                    question1: "What is the element tag for javascript?",
+                    choices: ["<javascript>", "<script>", "<js>", "<scripting>"],
+                    },*/
+
+                    {
+                        question: "Is javascript a case-sensitive language?",
+                        choices: ["True", "False"],
+                    },
+
+                    {
+                        question: "how can you get the type of arguments passed to function?",
+                        choices: ["using type of operator", "using the type of function", "both of the above"],
+                    },
+
+                    {
+                        question: "Which of the following type of variable takes the precedence over other if names are same?",
+                        choices: ["global variable", "local variable"],
+                    },
+
+                    {
+                        question: "Which built-in method reverses the order of elements of an array?",
+                        choices: ["changeOrder(oder)", "reverse()", "sort(order)", "none of the above"],
+                    },
+
+                    {
+                        question: "Which of the following function of String object combines the text of two strings and returns a new string?",
+                        choices: ["add()", "merge()", "concat()", "append()"],
+                    },
+
+                    {
+                        question: "How do you call a function named myFunction? ",
+                        choices: ["call myFunction(), myFunction()", "call function myFunction()"],
+                    },
+
+                    {
+                    question: "Which of the following function of String object combines the text of two strings and returns a new string?",
+                    choices: ["add()", "merge()", "concat()", "append()"]
+                    },
+
+                    {
+                    question: "Which of the following function of String object combines the text of two strings and returns a new string?",
+                    choices: ["add()", "merge()", "concat()", "append()"]
+                    },
+
+                    {
+                        question: "How to write an IF statement in JavaScript?",
+                        choices: ["if 1==5", "if 1=5", "if (i==5)", "if i=5 then"]
+                        }
+
+          ]
 
 
-// click an answer
-// confirm corect or wrong answer (display a message)
-// deduct time if incorrect
-// score 5 points for correct ans
-// end quiz when all questions are answered 
-// show finish screen, having final score on there.
+    
 
 
-// timer should count down from 120 sec
-// show curent time
-// reduce time by one
-// repeat every second (use set interval)
-// check if is at zero or less and then stop the timer
+//setting a value for the timer
+countdown.innerHTML= 120;
+let startTimer = countdown.innerHTML
 
-// type name in fimish screen
-// click a button to save thier score
-//when click the button, store in local storage(check class video for this bit)
-//setItem and getItem group 
+//building the quiz function
+function startQuiz() {
 
+    // creating the questions paragraph
+let secondDiv = document.getElementById("div-2");
+let para = document.createElement("p")
+let question = secondDiv.appendChild(para);
+question.innerHTML = jsQuestions[0];
+question = question.innerHTML;
+return frontPhoto;
+}
+
+
+function changeWindow () {
+    let newWindow = frontPhoto.style.display='none'
+    return newWindow
+}
+
+frontPhoto.addEventListener('click', changeWindow)

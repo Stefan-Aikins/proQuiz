@@ -18,96 +18,24 @@
             <h2>Code Quiz</h2>
         </header>
 
-        <!-- Modal copied bootstrap-->
-        <section class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                    ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </section>
                 
         <!--contains the app interface-->
-        <section id="app-body">
+        <section id="quiz-body">
             <!--placing highscore on the top-left and timer on the top right-->
             <div id="top-container">
                 <a href=""><h6 id="high-score">View High scores</h6></a>
                 <h6 id="count">Time Remaining: <span id="timer"></span></h6>
             </div>
 
-            <div>
+            <div id="div-2">
                 <!--front picture-->
                 <img id="start-photo" src="images/start-image.png" alt="javascript picture">
             </div>
             <!--clickable button to start the quiz-->
-            <button type="button" class="btn btn-primary start-button">start Quiz</button>
+            <button type="button" class="btn btn-primary" id="start-button">start Quiz</button>
             
         </section>
 
-         <!-- Quiz -->
-         <section id="quiz">
-            <h5 id="question">Question</h5>
-            <div class="row row-cols-1 row-cols-md-2">
-              <div class="col">
-                <div class="list-group mb-4" id="answers"></div>
-              </div>
-              <div class="col">
-                <div id="image_area"></div>
-              </div>
-            </div>
-          </section>
-
-          <!-- All Done -->
-          <section id="allDone">
-            <div class="alert alert-success mt-0 mb-0">
-              <h4 class="alert-heading">All Done!</h4>
-              <hr />
-              <h5 class="mb-0">Final score <span id="finalScore">xx</span></h5>
-              <hr />
-              <form class="form-inline">
-                <input
-                  class="form-control mr-2"
-                  type="text"
-                  id="initials"
-                  placeholder="Enter your initials"
-                />
-                <button type="submit" class="btn btn-info" id="submit">
-                  OK
-                </button>
-              </form>
-            </div>
-          </section>
-
-          <!-- Card Footer -->
-        <div class="card-footer text-muted p-0">
-            <div class="progress" style="height: 100%;">
-              <div
-                class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                style="width: 0%; height: 100%;"
-              ></div>
-            </div>
-            <div class="alert alert-success mt-0 mb-0 pt-0 pb-0" id="assess-ft">
-              <strong></strong>
-            </div>
-          </div>
-          <!-- /Card Footer -->
-        </section>
-        <!-- /The Main Card -->
-      </div>
-
-        </main>
 
     </div>
 
